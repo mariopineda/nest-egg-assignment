@@ -29,6 +29,9 @@ public class NestEgg
 		int years = kbReader.nextInt(); 
 		double F = salary * save * 0.01; //base funds
 		
+		System.out.print("Incorporate inflation? (Y / N)");
+		String ans = (kbReader.nextString()).tolowerCase;
+		
 		System.out.println("End of year 1: $" + F);
 		for (int i = 1; i < years; i++)
 		{
