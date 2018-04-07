@@ -14,6 +14,8 @@ public class NestEgg
 		System.out.print("Enter the percentage of funds to put into the retirement fund: ");
 		double save = kbReader.nextDouble();
 		System.out.print("Enter the annual growth percentage: ");
-		double growthRate = kbReader.nextDouble(); 
+		double growthRate = kbReader.nextDouble();
+		System.out.print("Enter the amount of years you want to save for: ");
+		int years = kbReader.nextInt(); 
 	}
 }
