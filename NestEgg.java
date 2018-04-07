@@ -17,9 +17,13 @@ public class NestEgg
 		double growthRate = kbReader.nextDouble();
 		System.out.print("Enter the amount of years you want to save for: ");
 		int years = kbReader.nextInt(); 
+		double F = salary * save * 0.01; //base funds
+		double G; //stores value of F
 		
-		for (int i = 0; i <= years; i++)
+		System.out.println("End of year 1: $" + F);
+		for (int i = 1; i < years; i++)
 		{
+		
 		}
 	}
 }
