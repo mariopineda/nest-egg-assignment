@@ -13,8 +13,18 @@ public class NestEgg
 		double salary = kbReader.nextDouble();
 		System.out.print("Enter the percentage of funds to put into the retirement fund: ");
 		double save = kbReader.nextDouble();
+		if (save > 100 || save < 0)
+		{
+			System.out.print("Please enter a sensible value. ");
+			save = kbReader.nextDouble();
+		}
 		System.out.print("Enter the annual growth percentage: ");
 		double growthRate = kbReader.nextDouble();
+		if (growthRate > 100 || growthRate < 0);
+		{
+			System.out.print("Please enter a sensible value. ");
+			growthRate = kbReader.nextDouble();
+		}
 		System.out.print("Enter the amount of years you want to save for: ");
 		int years = kbReader.nextInt(); 
 		double F = salary * save * 0.01; //base funds
