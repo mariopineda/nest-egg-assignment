@@ -18,12 +18,12 @@ public class NestEgg
 		System.out.print("Enter the amount of years you want to save for: ");
 		int years = kbReader.nextInt(); 
 		double F = salary * save * 0.01; //base funds
-		double G; //stores value of F
 		
 		System.out.println("End of year 1: $" + F);
 		for (int i = 1; i < years; i++)
 		{
-		
+		F = F * (1+0.01 * growthRate) + salary * save * 0.01;
+		System.out.println("End of year " + (i + 1) + ": $" + F);
 		}
 	}
 }
