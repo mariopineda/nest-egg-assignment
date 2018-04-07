@@ -6,6 +6,14 @@ public class NestEgg
 {
 	public static void main(String args[])
 	{
-		
+		Scanner kbReader = new Scanner(System.in);
+	
+		System.out.println("Nest Egg Calculator");
+		System.out.print("Enter your salary: $");
+		double salary = kbReader.nextDouble();
+		System.out.print("Enter the percentage of funds to put into the retirement fund: ");
+		double save = kbReader.nextDouble();
+		System.out.print("Enter the annual growth percentage: ");
+		double growthRate = kbReader.nextDouble(); 
 	}
 }
