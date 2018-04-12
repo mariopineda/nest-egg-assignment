@@ -18,6 +18,6 @@ Write a program that calculates the size of your retirement account at the end o
 * ask for a users salary, the percentage of the salary that should be put into a retirement fund and the annual growth percentage of the retirement fund.
 * use sensible default values if the user chooses not to provide an answers
 * perform simply sanity checks on usr inputs, e.g. inputs are sensible numerical values
-* allow to chose if their slary should grow with inflation. While this is a required specification, it is up to you to do the required research, thinking, math and decision of how to incorporate inflation.
+* allow to chose if their salary should grow with inflation. While this is a required specification, it is up to you to do the required research, thinking, math and decision of how to incorporate inflation.
 
 
