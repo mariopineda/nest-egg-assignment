@@ -12,14 +12,14 @@ public class NestEgg
 		System.out.print("Enter your salary: $");
 		double salary = kbReader.nextDouble();
 		System.out.print("Enter the percentage of funds to put into the retirement fund: ");
-		double save = kbReader.nextDouble(); //every year, adds this amount
+		double save = kbReader.nextDouble();
 		if (save > 100 || save < 0)
 		{
 			System.out.print("Please enter a sensible value. ");
 			save = kbReader.nextDouble();
 		}
-		System.out.print("Enter the annual growth percentage: "); 
-		double growthRate = kbReader.nextDouble(); //account will increase by this percent every year
+		System.out.print("Enter the annual growth percentage: ");
+		double growthRate = kbReader.nextDouble();
 		if (growthRate > 100 || growthRate < 0)
 		{
 			System.out.print("Please enter a sensible value. ");
@@ -35,8 +35,9 @@ public class NestEgg
 		System.out.println(ans);
 		if (ans.equals("y")) // == does not work
 		{
+			System.out.println("hello");
 			System.out.print("Enter annual inflation rate. ");
-			infla = kbReader.nextDouble(); //value of money will decrease by % every year
+			infla = kbReader.nextDouble(); //value of money will increase by % every year
 		}
 		
 		System.out.println("End of year 1: $" + F);
@@ -48,3 +49,4 @@ public class NestEgg
 		System.out.println("End of year " + (i + 1) + ": $" + F);
 		}
 	}
+}
