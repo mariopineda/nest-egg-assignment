@@ -12,15 +12,15 @@ public class NestEgg
 		System.out.print("Enter your salary: $");
 		double salary = kbReader.nextDouble();
 		System.out.print("Enter the percentage of funds to put into the retirement fund: ");
-		double save = kbReader.nextDouble();
+		double save = kbReader.nextDouble(); //every year, adds this amount
 		if (save > 100 || save < 0)
 		{
 			System.out.print("Please enter a sensible value. ");
 			save = kbReader.nextDouble();
 		}
-		System.out.print("Enter the annual growth percentage: ");
-		double growthRate = kbReader.nextDouble();
-		if (growthRate > 100 || growthRate < 0);
+		System.out.print("Enter the annual growth percentage: "); 
+		double growthRate = kbReader.nextDouble(); //account will increase by this percent every year
+		if (growthRate > 100 || growthRate < 0)
 		{
 			System.out.print("Please enter a sensible value. ");
 			growthRate = kbReader.nextDouble();
@@ -30,13 +30,21 @@ public class NestEgg
 		double F = salary * save * 0.01; //base funds
 		
 		System.out.print("Incorporate inflation? (Y / N)");
-		String ans = (kbReader.nextString()).tolowerCase;
+		String ans = (kbReader.next()).toLowerCase(); //converts answer to lower case
+		double infla = 0; //inflation rate: declared later
+		System.out.println(ans);
+		if (ans.equals("y")) // == does not work
+		{
+			System.out.print("Enter annual inflation rate. ");
+			infla = kbReader.nextDouble(); //value of money will decrease by % every year
+		}
 		
 		System.out.println("End of year 1: $" + F);
 		for (int i = 1; i < years; i++)
 		{
 		F = F * (1+0.01 * growthRate) + salary * save * 0.01;
+		if (ans.equals("y"))
+			F = F * (1 - 0.01 * infla); //converts inflation input to decimal
 		System.out.println("End of year " + (i + 1) + ": $" + F);
 		}
 	}
-}
