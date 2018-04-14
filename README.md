@@ -19,5 +19,6 @@ Write a program that calculates the size of your retirement account at the end o
 * use sensible default values if the user chooses not to provide an answers
 * perform simply sanity checks on usr inputs, e.g. inputs are sensible numerical values
 * allow to chose if their salary should grow with inflation. While this is a required specification, it is up to you to do the required research, thinking, math and decision of how to incorporate inflation.
+* Make sure decimal number are rounder (or truncated) to a sensible number of decimals (e.g. two).
 
 
