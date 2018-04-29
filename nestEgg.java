@@ -10,5 +10,9 @@ public class nestEgg {
       save = kbReader.nextDouble();
       System.out.print("What is the growth percentage of the retirement fund? ");
       growth = kbReader.nextDouble();
+      for (int i = 0; i < 10; i++) {
+         
+      }
+      System.out.println("By the end of 10 years, your retirement fund will be $" + fund);
    }
 }
