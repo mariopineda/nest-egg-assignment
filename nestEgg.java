@@ -13,10 +13,12 @@ public class nestEgg {
       System.out.print("Do you want your salary to grow with inflation? (Y/N) ");
       char choice = kbReader.next(".").charAt(0);
       if (choice == 'Y' || choice == 'y') {
-         
+         inflation = 0.022;
+         System.out.println("   Your salary will grow with inflation.");
       }
       else {
-         
+         inflation = 0;
+         System.out.println("   Your salary will not grow with inflation.");
       }
       for (int i = 0; i < 10; i++) {
          fund = fund * (1 + 0.01 * growth) + salary *save * 0.01; //Calculation for determining retirement fund
