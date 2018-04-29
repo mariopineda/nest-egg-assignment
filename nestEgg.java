@@ -45,6 +45,6 @@ public class nestEgg {
          fund = fund * (1 + 0.01 * growth) + salary *save * 0.01; //Calculation for determining retirement fund
          salary = salary * (1 + inflation);
       }
-      System.out.println("By the end of 10 years, your retirement fund will be $" + fund);
+      System.out.printf("By the end of " + years + " years, your retirement fund will be $" + "%.2f.\n", fund);
    }
 }
