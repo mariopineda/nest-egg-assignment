@@ -8,17 +8,17 @@ public class nestEgg {
       System.out.print("How much is your salary? ");
       salary = kbReader.nextDouble();
       if (salary <= 0) {
-         
+         salary = 51000;
       }
       System.out.print("What percentage of your salary are you saving? ");
       save = kbReader.nextDouble();
       if (save <= 0 || save >= 100) {
-         
+         save = 15;
       }
       System.out.print("What is the growth percentage of the retirement fund? ");
       growth = kbReader.nextDouble();
       if (growth <= 0 || growth >= 100) {
-         
+         growth = 3;
       }
       System.out.print("Do you want your salary to grow with inflation? (Y/N) ");
       char choice = kbReader.next(".").charAt(0);
@@ -33,7 +33,7 @@ public class nestEgg {
       System.out.print("How long until retirement? ");
       years = kbReader.nextInt();
       if (years <= 0) {
-         
+         years = 35;
       }
       for (int i = 0; i < years; i++) {
          fund = fund * (1 + 0.01 * growth) + salary *save * 0.01; //Calculation for determining retirement fund
