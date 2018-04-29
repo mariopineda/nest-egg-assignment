@@ -16,7 +16,9 @@ public class nestEgg {
          }
       }
       catch (Exception e) {
-         
+         salary = defArray[0];
+         System.out.println(defVal);
+         kbReader.next();
       }
       try {
          System.out.print("What percentage of your salary are you saving? ");
@@ -27,7 +29,9 @@ public class nestEgg {
          }
       }
       catch (Exception e) {
-         
+         save = defArray[1];
+         System.out.println(defVal);
+         kbReader.next();
       }
       try {
          System.out.print("What is the growth percentage of the retirement fund? ");
@@ -38,7 +42,9 @@ public class nestEgg {
          }
       }
       catch (Exception e) {
-         
+         growth = defArray[2];
+         System.out.println(defVal);
+         kbReader.next();
       }
       try {
          System.out.print("Do you want your salary to grow with inflation? (Y/N) ");
@@ -52,7 +58,10 @@ public class nestEgg {
             System.out.println("   Your salary will not grow with inflation.");
          }
       catch (Exception e) {
-         
+         inflation = defArray[3];
+         System.out.println(defVal);
+         System.out.println("   Your salary will not grow with inflation.");
+         kbReader.next();
       }
       try {
          System.out.print("How long until retirement? ");
@@ -62,7 +71,8 @@ public class nestEgg {
             System.out.println(defVal);
          }
       catch (Exception e) {
-         
+         years = defArray[4];
+         System.out.println(defVal);
       }
       for (int i = 0; i < years; i++) {
          fund = fund * (1 + 0.01 * growth) + salary *save * 0.01; //Calculation for determining retirement fund
