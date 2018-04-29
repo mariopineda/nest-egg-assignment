@@ -4,6 +4,7 @@ public class nestEgg {
    public static void main(String args[]) {
       Scanner kbReader = new Scanner(System.in);
       double salary, save, growth, inflation, fund = 0;
+      int years;
       System.out.print("How much is your salary? ");
       salary = kbReader.nextDouble();
       System.out.print("What percentage of your salary are you saving? ");
@@ -20,7 +21,9 @@ public class nestEgg {
          inflation = 0;
          System.out.println("   Your salary will not grow with inflation.");
       }
-      for (int i = 0; i < 10; i++) {
+      System.out.print("How long until retirement? ");
+      years = kbReader.nextInt();
+      for (int i = 0; i < years; i++) {
          fund = fund * (1 + 0.01 * growth) + salary *save * 0.01; //Calculation for determining retirement fund
          salary = salary * (1 + inflation);
       }
