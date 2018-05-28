@@ -4,7 +4,7 @@ public class nestEgg {
    public static void main(String args[]) {
       Scanner kbReader = new Scanner(System.in);
       String defVal = "   Your input is not sensible or invalid. A default value has been assigned.";
-      int defArray = {51000,15,3,0,35}; //Array containing default values of all variables
+      int[] defArray = {51000,15,3,0,35}; //Array containing default values of all variables
       double salary, save, growth, inflation, fund = 0; //Declaring all variables
       int years;
       try { //Tries to run section of program and catches exceptions (ex. InputMismatch)
@@ -57,6 +57,7 @@ public class nestEgg {
             inflation = defArray[3];
             System.out.println("   Your salary will not grow with inflation.");
          }
+      }
       catch (Exception e) {
          inflation = defArray[3];
          System.out.println(defVal);
@@ -70,6 +71,7 @@ public class nestEgg {
             years = defArray[4];
             System.out.println(defVal);
          }
+      }
       catch (Exception e) {
          years = defArray[4];
          System.out.println(defVal);
