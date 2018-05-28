@@ -20,4 +20,10 @@ Write a program that calculates the size of your retirement account at the end o
 * perform simply sanity checks on usr inputs, e.g. inputs are sensible numerical values
 * allow to chose if their slary should grow with inflation. While this is a required specification, it is up to you to do the required research, thinking, math and decision of how to incorporate inflation.
 
-
+Steps to completing this project:
+1. Define the function for determining the retirement fund, not including inflation yet
+2. Ask user for input for salary, save, and growthRate
+3. Inflation should be incorporated into the function
+4. Ask user if they want to include inflation in their calculation
+5. Create if statements checking if user input is sensible (for ex. >0 and <100 for percentages)
+6. Create default values for if user input is not sensible
