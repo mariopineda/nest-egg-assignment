@@ -21,4 +21,10 @@ Write a program that calculates the size of your retirement account at the end o
 * allow to chose if their salary should grow with inflation. While this is a required specification, it is up to you to do the required research, thinking, math and decision of how to incorporate inflation.
 * Make sure decimal number are rounder (or truncated) to a sensible number of decimals (e.g. two).
 
-
+Steps to completing this project:
+1. Define the function for determining the retirement fund, not including inflation yet
+2. Ask user for input for salary, save, and growthRate
+3. Inflation should be incorporated into the function
+4. Ask user if they want to include inflation in their calculation
+5. Create if statements checking if user input is sensible (for ex. >0 and <100 for percentages)
+6. Create default values for if user input is not sensible
